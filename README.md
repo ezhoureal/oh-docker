@@ -46,17 +46,17 @@ bash build/prebuilts_config.sh
 
 Basic build:
 ```bash
-hb build -i
+hb build <module name> -i // module name example: graphic_2d
 ```
 
 With compile_commands.json for clangd:
 ```bash
-hb build -i --gn-flags=--export-compile-commands
+hb build <module name> -i --gn-flags=--export-compile-commands
 ```
 
 Skip downloading for rebuilds:
 ```bash
-hb build -i --skip-download
+hb build <module name> -i --skip-download
 ```
 
 ## Build Directory
